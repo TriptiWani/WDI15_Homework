@@ -1,0 +1,15 @@
+.rotate {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg)
+        /*scaleX(-1);*/
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.flip {
+  position:absolute;
+  top:110px;
+  left:450px;
+  height:70px
+}
