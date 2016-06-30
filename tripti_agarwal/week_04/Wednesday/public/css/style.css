@@ -1,0 +1,21 @@
+* {
+  background-color: rgb(186, 178, 220);
+  font-size: 15px;
+  text-align:center;
+}
+h1{
+  font-size: 25px;
+
+}
+img {
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+}
+button {
+  border-color:  black;
+  border-width: thin;
+}
+input {
+  border-color: black;
+}
