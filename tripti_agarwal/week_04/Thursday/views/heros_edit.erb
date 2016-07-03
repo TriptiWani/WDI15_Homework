@@ -1,0 +1,17 @@
+<h1> Edit </h1>
+
+<% if @hero %>
+  <form action="/heros/<%= @hero['id'] %>/update" method="post">
+    <input type="text" name="character_name" value="<%= @hero['character_name'] %>" placeholder="Character Name" >
+     <input type="text" name="human_name" value="<%= @hero['human_name'] %>" placeholder="Human Name">
+     <input type="text" name="actor_name" value="<%= @hero['actor_name'] %>" placeholder="Actor Name">
+     <input type="text" name="bio" value="<%= @hero['bio'] %>" placeholder="Bio">
+     <input type="text" name="super_powers" value="<%= @hero['super_powers'] %>" placeholder="Super Powers">
+     <input type="number" name="hero" value="<%= @hero['hero'] %>" placeholder="1 - Hero 2 - Villian">
+     <input type="text" name="linked_to" value="<%= @hero['linked_to'] %>" placeholder="Linked To">
+     <input type="url" name="comic_image" value="<%= @hero['comic_image'] %>" placeholder="Comic Image">
+     <input type="url" name="character_image" value="<%= @hero['character_image'] %>" placeholder="Character image">
+
+    <button>Update My Hero</button>
+  </form>
+<% end %>

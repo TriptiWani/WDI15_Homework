@@ -1,0 +1,48 @@
+<div>
+  <nav>
+    <a href='/heros'>Home</a>
+    <a href='/heros/<%= @hero['id'] %>/edit'>Edit</a>
+    <a href="/heros/<%= @hero['id'] %>/delete">Delete</a>
+  </nav>
+</div>
+<table>
+  <th>
+    <h1>Details</h1>
+  </th>
+  <tr>
+    <td><strong>Character Name</strong></td>
+    <td><%= @hero['character_name'] %></td>
+  </tr>
+  <tr>
+    <td><strong>Human Name</strong></td>
+    <td><%= @hero['human_name'] %></td>
+  </tr>
+  <tr>
+    <td><strong>Actor Name</strong></td>
+    <td><%= @hero['actor_name'] %></td>
+  </tr>
+  <tr>
+    <td><strong>Bio</strong></td>
+    <td><div><%= @hero['bio'] %></div></td>
+  </tr>
+  <tr>
+    <td><strong>Super Powers</strong></td>
+    <td><%= @hero['super_powers'] %></td>
+  </tr>
+  <tr>
+    <td><strong>Type</strong></td>
+    <% if @hero['hero'].eql?1 %>
+          <td>Hero  </td>
+          <% else %>
+          <td>Vilian</td>
+          <% end %>
+  </tr>
+  <tr>
+    <td><strong>Comic Image</strong></td>
+    <td><img src="<%= @hero['comic_image'] %>" ></td>
+  </tr>
+  <tr>
+    <td><strong>Character Image</strong></td>
+    <td><img src="<%= @hero['character_image'] %>"></td>
+  </tr>
+</table>

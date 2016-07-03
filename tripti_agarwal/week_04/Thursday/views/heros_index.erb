@@ -1,0 +1,13 @@
+<h1> All Heros </h1>
+
+  <% @heros.each do |h| %>
+    <p>
+      <a href="/heros/<%= h['id'] %>/show"><%= h['character_name'] %></a>
+    </p>
+  <%end %>
+
+  <div>
+    <form action="/heros/new" method="get">
+      <button>Add a new HERO</button>
+    </form>
+  </div>
