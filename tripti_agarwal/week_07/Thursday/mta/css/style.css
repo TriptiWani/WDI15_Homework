@@ -1,0 +1,49 @@
+body {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/f9/91/f1/f991f18be20922e2c4bce6200641ef91.jpg);
+  background-size: cover;
+}
+.search {
+  margin-left: 250px;
+}
+h2 {
+  margin-left:50px;
+  margin-top: 50px;
+}
+select{
+  background-color: #29473d;
+  color:#9fb38f;
+  height: 25px;
+  width:120px;
+  margin:2em;
+}
+#searchRoute {
+  background-color: #29473d;
+  color:#9fb38f;
+  height: 25px;
+  width:80px;
+  margin-left:130px;
+}
+.changeAt{
+  animation: blink-animation 1s steps(5, start) infinite;
+ -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+ to {
+   visibility: hidden;
+ }
+}
+@-webkit-keyframes blink-animation {
+ to {
+   visibility: hidden;
+ }
+}
+.hidden {
+  display:none;
+}
+#results {
+  margin-top: 100px;
+  margin-left: 250px;
+  border-width: thick;
+  border-color: #021e21;
+  color:white;
+}

@@ -1,0 +1,23 @@
+.info {
+  text-align: center;
+  width:50%;
+  position:fixed;
+  left:350px;
+  border-width: medium;
+  border-color: black;
+  /*background-image:url(https://i1.sndcdn.com/artworks-000172260107-fv0zj9-large.jpg);*/
+}
+.form {
+  text-align: center;
+  padding-bottom: 5em;
+}
+h1,h2 {
+  text-align: center;
+}
+td {
+  /*padding-left: 5em;*/
+}
+tr,td {
+  border-color: black;
+  border-width: thin;
+}

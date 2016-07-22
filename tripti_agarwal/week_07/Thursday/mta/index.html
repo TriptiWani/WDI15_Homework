@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MTA</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/mta.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="search">
+    <h2>Know Your Route</h2>
+    <form>
+      <select name="routes" id="stationFrom">
+        <option class="selected" value="default">Source</option>
+        <option id="" value="1">N,Times Square</option>
+        <option id="" value="2">N,34th</option>
+        <option id="" value="3">N,28th</option>
+        <option id="" value="4">N,23rd</option>
+        <option id="" value="5">N,Union Square</option>
+        <option id="" value="6">N,8th</option>
+        <option id="" value="7">L,8th</option>
+        <option id="" value="8">L,6th</option>
+        <option id="" value="9">L,Union Square</option>
+        <option id="" value="10">L,3rd</option>
+        <option id="" value="11">L,1st</option>
+        <option id="" value="12">6,Grand Central</option>
+        <option id="" value="13">6,33rd</option>
+        <option id="" value="14">6,28th</option>
+        <option id="" value="15">6,23rd</option>
+        <option id="" value="16">6,Union Square</option>
+        <option id="" value="17">6,Astor Place</option>
+      </select>
+
+      <select name="routes" id="stationTo">
+        <option class="selected" value="default">Destination</option>
+        <option id="" value="1">N,Times Square</option>
+        <option id="" value="2">N,34th</option>
+        <option id="" value="3">N,28th</option>
+        <option id="" value="4">N,23rd</option>
+        <option id="" value="5">N,Union Square</option>
+        <option id="" value="6">N,8th</option>
+        <option id="" value="7">L,8th</option>
+        <option id="" value="8">L,6th</option>
+        <option id="" value="9">L,Union Square</option>
+        <option id="" value="10">L,3rd</option>
+        <option id="" value="11">L,1st</option>
+        <option id="" value="12">6,Grand Central</option>
+        <option id="" value="13">6,33rd</option>
+        <option id="" value="14">6,28th</option>
+        <option id="" value="15">6,23rd</option>
+        <option id="" value="16">6,Union Square</option>
+        <option id="" value="17">6,Astor Place</option>
+      </select>
+      <div >
+        <button class="hidden" type="button" id="searchRoute">Search</button>
+      </div>
+    </form>
+  </div>
+  <div id="results">
+
+  </div>
+</body>
+</html>
