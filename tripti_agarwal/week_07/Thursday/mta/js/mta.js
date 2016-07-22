@@ -53,7 +53,7 @@ $(document).ready(function() {
       $('#results').append($p);
       }
     } else {
-      numberOfStops = (routeOnSameLine(sourceLine,sourceStation,intersectionStation[0])).length+(routeOnSameLine(destinationLine,intersectionStation[0],destinationStation).length);
+      numberOfStops = _.size(routeOnSameLine(sourceLine,sourceStation,intersectionStation[0]))+_.size(routeOnSameLine(destinationLine,intersectionStation[0],destinationStation));
       console.log(routeOnSameLine(sourceLine,sourceStation,intersectionStation[0]));
       console.log(routeOnSameLine(destinationLine,intersectionStation[0],destinationStation));
       console.log(_.union(
