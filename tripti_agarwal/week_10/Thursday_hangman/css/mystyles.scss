@@ -1,0 +1,76 @@
+.person {
+	position: relative;
+	margin: 0 auto;
+	width: 150px;
+	height: 350px;
+	text-align: center;
+	> div {
+		position: absolute;
+		&.center {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	.head {
+		height: 50px;
+		width: 50px;
+		border: solid 1px #000;
+		border-radius: 50%;
+	}
+	.torso {
+		width: 1px;
+		height: 85px;
+		background: #000;
+		top: 51px;
+	}
+	.arm {
+		width: 1px;
+		height: 35px;
+		background: #000;
+		top: 55px;
+		&.left {
+			left: calc(50% - 1px);
+			transform-origin: bottom;
+			transform: rotate(-45deg);
+			animation-name: wave;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+		&.right {
+			left: calc(50% - 1px);
+			transform-origin: bottom;
+			transform: rotate(45deg);
+		}
+	}
+	.leg {
+		width: 1px;
+		height: 50px;
+		background: #000;
+		top: 85px;
+		&.left {
+			left: calc(50% - 1px);
+			transform-origin: bottom;
+			transform: rotate(-145deg);
+		}
+		&.right {
+			left: calc(50%);
+			transform-origin: bottom;
+			transform: rotate(145deg);
+		}
+	}
+}
+
+@keyframes wave {
+	0% {
+		transform-origin: bottom;
+		transform: rotate(-45deg);
+	}
+	10% {
+			transform-origin: bottom;
+			transform: rotate(-75deg);
+	}
+	20% {
+		transform-origin: bottom;
+		transform: rotate(-45deg);
+	}
+}
