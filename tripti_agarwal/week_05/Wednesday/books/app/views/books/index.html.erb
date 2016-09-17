@@ -1,0 +1,6 @@
+<section>
+  <h1>Books</h1>
+  <% @books.each do |b| %>
+    <p><%= link_to b.title,b %></p>
+  <% end %>
+</section>

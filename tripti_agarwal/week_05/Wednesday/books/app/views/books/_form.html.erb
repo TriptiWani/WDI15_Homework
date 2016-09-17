@@ -1,0 +1,55 @@
+<%= form_for @book do |f| %>
+  <fieldset>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :published_year %>
+    <%= f.text_field :published_year %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :reviews_count %>
+    <%= f.text_field :reviews_count %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :author_name %>
+    <%= f.text_field :author_name %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :synopsis %>
+    <%= f.text_field :synopsis %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :read%>
+    <%= f.text_field :read %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :like_to_read %>
+    <%= f.text_field :like_to_read %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :genre %>
+    <%= f.text_field :genre %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :language %>
+    <%= f.text_field :language %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :isbn %>
+    <%= f.text_field :isbn %>
+  </fieldset>
+  <fieldset>
+  <%= f.label :author_id %>
+  <%= f.select :author_id,Author.pluck(:name,:id),:include_blank => true %> <%= link_to 'Add new author' , new_author_path %>
+</fieldset>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <nav>
+      <%= link_to 'Home',root_path %>
+      <%= link_to 'All Books',books_path %>
+      <%= link_to 'New Book', new_book_path %>
+      <%= link_to 'All Authors', authors_path %>
+      <%= link_to 'New Author', new_author_path %>
+    </nav>
+  </header>
+
+<%= yield %>
+<footer>
+  Copyrights reserved &copy;
+</footer>
+</body>
+</html>

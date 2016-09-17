@@ -1,0 +1,45 @@
+<h1><%= @book.title %></h1>
+<div>
+  <article class="top-align">
+    <ul>
+      <li>Added Author: <%= link_to @book.author.name, @book.author if @book.author %></li>
+      <li>Published Year: <%= @book.published_year %></li>
+      <li>Ratings:
+        <% @book.rating.times do |i| %>
+          <span style="font-size:150%;color:yellow;">&#9733;</span>
+        <% end %>
+      </li>
+      <li>Reviews Count: <%= @book.reviews_count %></li>
+      <li>Author name: <%= @book.author_name %></li>
+      <li>Genre: <%= @book.genre %></li>
+      <li>Language:<%= @book.language %></li>
+      <li>ISBN:<%= @book.isbn %></li>
+      <li>
+        Have you read it: <span style="font-family: wingdings; font-size: 200%;">
+          <% if @book.read %>
+            &#10003;
+          <% else %>
+            &#10007;
+          </span>
+        <% end %>
+        </li>
+        <li>
+        Would it like to read it: <span style="font-family: wingdings; font-size: 200%;">
+            <% if @book.like_to_read %>
+             &#x1F44D;
+            <% else %>
+              &#x1f44e;
+            </span>
+          <% end %>
+        </li>
+    </ul>
+  </article>
+  <aside class="top-align">
+    <%= image_tag @book.image,:class=> 'image_cover' %>
+  </aside>
+</div>
+
+<div class="controls">
+  <%= link_to 'Edit Book', edit_book_path(@book) %>
+  <%= link_to 'Delete Book', @book , :method => 'delete' , :data => { :confirm => 'Are you sure'}  %>
+</div>

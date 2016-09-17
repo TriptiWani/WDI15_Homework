@@ -1,0 +1,8 @@
+<section>
+  <h1>Authors</h1>
+  <% @authors.each do |a| %>
+  <p>
+    <%= link_to a.name, a %>
+  </p>
+  <% end %>
+</section>
